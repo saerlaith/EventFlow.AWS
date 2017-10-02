@@ -1,0 +1,11 @@
+version: '3'
+services:
+        local-dynamo:
+                image: 'cnadiminti/dynamodb-local:latest'
+                ports:
+                        - '8000:8000'
+        fake-s3:
+                image: 'lphoward/fake-s3'
+                ports:
+                        - '4569:4569'
+       
